@@ -19,6 +19,10 @@ class AuthorsController < ApplicationController
   end
   
   def edit 
+<<<<<<< HEAD
+=======
+    @author.find(params[:id])
+>>>>>>> cb8e901cca2cd31e35233b5b5e72ffbd6863154d
   end
   
   def update

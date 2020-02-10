@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 <h2>Create post</h2>
 <%= form_tag posts_path(@post), method: "post" do %>
+=======
+<h2>Create post "<%= @post.title %>"</h2>
+<%= form_tag post_path(@post), method: "post" do %>
+>>>>>>> cb8e901cca2cd31e35233b5b5e72ffbd6863154d
   
   <% if @post.errors.any? %>
     <div id="error_explanation">
@@ -34,4 +39,9 @@
     <%= text_area_tag "content", @post.content %>
   </div>
   <%= submit_tag "Create" %>
+<<<<<<< HEAD
 <% end %>
+=======
+<% end %>
+
+>>>>>>> cb8e901cca2cd31e35233b5b5e72ffbd6863154d

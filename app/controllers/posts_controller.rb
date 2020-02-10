@@ -19,7 +19,10 @@ class PostsController < ApplicationController
   end
   
   def create
+<<<<<<< HEAD
     @post = Post.new(post_params)
+=======
+>>>>>>> cb8e901cca2cd31e35233b5b5e72ffbd6863154d
     if @post.valid?
       @post.save
       redirect_to post_path(@post)
